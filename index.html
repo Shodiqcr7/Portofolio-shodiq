@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shodiq's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #007BFF, #0056b3);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0056b3;
+        }
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 2rem auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            margin-top: 0;
+            color: #0056b3;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        section ul li {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        section ul li::before {
+            content: '\2022';
+            color: #007BFF;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        section ul li i {
+            color: #007BFF;
+            font-size: 1.2rem;
+        }
+        section img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 15px;
+            margin: 1rem auto;
+            display: block;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #007BFF;
+            color: white;
+            margin-top: 2rem;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .about-container img {
+            flex-shrink: 0;
+        }
+        .about-container p {
+            margin: 0;
+        }
+        .contact-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        .contact-icons i {
+            color: #007BFF;
+            margin-right: 0.5rem;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Shodiq's Portfolio</h1>
+        <p>Dedication | Creativity | Management</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="profile.jpg" alt="Shodiq's Photo" style="width: 150px; border-radius: 50%;">
+            <div>
+                <p><strong>Hi, I’m Shodiq!</strong> A driven professional with expertise in <span style="color: #007BFF;">engineering</span>, <span style="color: #007BFF;">creative design</span>, and <span style="color: #007BFF;">administration</span>. I thrive on transforming challenges into opportunities with innovative solutions and exceptional management skills.</p>
+                <p>Over the years, I’ve successfully delivered impactful projects, managed cross-functional teams, and helped businesses achieve their goals. I am deeply passionate about blending technology and creativity to craft meaningful results.</p>
+                <blockquote style="font-style: italic; color: #555; border-left: 4px solid #007BFF; padding-left: 1rem; margin: 1rem 0;">
+                    "Passion and perseverance drive innovation and success."
+                </blockquote>
+                <p><strong>Let’s collaborate and create something extraordinary!</strong></p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><i class="fas fa-cogs"></i><strong>Technician & Designer</strong> at CV Teknokreasi - Contributed to technical and design solutions for various projects.</li>
+            <li><i class="fas fa-business-time"></i><strong>Business Owner</strong> at Yafaroo Entrepreneur - Managed and grew a successful entrepreneurial venture.</li>
+            <li><i class="fas fa-clipboard"></i><strong>Administrator</strong> at CV Sinarjaya - Streamlined operations and ensured smooth administrative processes.</li>
+        </ul>
+        <img src="experience.webp" alt="Experience Highlights">
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><i class="fas fa-tools"></i>Technical problem-solving and engineering</li>
+            <li><i class="fas fa-paint-brush"></i>Creative design and innovative thinking</li>
+            <li><i class="fas fa-tasks"></i>Efficient task and project management</li>
+            <li><i class="fas fa-users"></i>Strong communication and teamwork</li>
+            <li><i class="fas fa-file-alt"></i>Administrative and operational expertise</li>
+        </ul>
+        <img src="skills.webp" alt="Skills Visualization">
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-icons">
+            <p><i class="fas fa-envelope"></i>Email: <a href="mailto:abdwasikasshodiq@gmail.com">abdwasikasshodiq@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i>Phone: <a href="tel:+6289686789848">+62 896-8678-9848</a></p>
+            <p><i class="fab fa-whatsapp"></i>WhatsApp: <a href="https://wa.me/6289686789848" target="_blank">Chat via WhatsApp</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shodiq. All rights reserved.</p>
+    </footer>
+</body>
+</html>
